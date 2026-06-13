@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RadientHub BD Admin</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+        body{background:linear-gradient(135deg,#1d1d1d,#6a0572);color:white;min-height:100vh;padding:40px}
+        h1{text-align:center;color:#ff7eb3;margin-bottom:30px}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+        .card{background:rgba(255,255,255,.13);padding:25px;border-radius:18px;text-align:center}
+        .card h2{color:#ffb6d5}
+        table{width:100%;margin-top:35px;border-collapse:collapse;background:rgba(255,255,255,.12)}
+        th,td{padding:14px;border:1px solid rgba(255,255,255,.25);text-align:center}
+        a,button{display:inline-block;margin-top:25px;background:#ff4081;color:white;text-decoration:none;border:none;padding:12px 25px;border-radius:25px}
+    </style>
+</head>
+<body>
+
+<h1>Admin Dashboard - RadientHub BD</h1>
+
+<div class="grid">
+    <div class="card"><h2>3</h2><p>Total Users</p></div>
+    <div class="card"><h2>3</h2><p>Total Services</p></div>
+    <div class="card"><h2>5</h2><p>Total Bookings</p></div>
+    <div class="card"><h2>4.7</h2><p>Average Rating</p></div>
+</div>
+
+<table>
+    <tr>
+        <th>Customer</th>
+        <th>Service</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Emon</td>
+        <td>Hair Cut</td>
+        <td>Confirmed</td>
+    </tr>
+    <tr>
+        <td>Bithe</td>
+        <td>Facial Treatment</td>
+        <td>Pending</td>
+    </tr>
+    <tr>
+        <td>Customer</td>
+        <td>Bridal Makeup</td>
+        <td>Confirmed</td>
+    </tr>
+</table>
+
+<center>
+    <a href="/admin-bookings">View Booking Requests</a>
+    <a href="/admin-summary">Backend Admin Summary</a>
+    <a href="/h2-console">H2 Database Console</a>
+    <a href="/index.html">Logout</a>
+</center>
+
+</body>
+</html>

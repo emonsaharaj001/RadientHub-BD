@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+    <style>
+        body{margin:0;font-family:Arial;background:linear-gradient(135deg,#111,#3b003b);height:100vh;color:white;display:flex;justify-content:center;align-items:center}
+        .box{width:400px;background:rgba(255,255,255,.14);padding:40px;border-radius:22px;text-align:center}
+        h1{color:#ff7eb3}
+        input{width:100%;padding:13px;margin:10px 0;border:none;border-radius:10px}
+        button,a{display:block;width:100%;padding:13px;margin:12px 0;border:none;border-radius:25px;background:#ff4081;color:white;text-decoration:none;cursor:pointer}
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1>Admin Login</h1>
+    <input id="email" type="email" placeholder="Admin Email">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="login()">Login as Admin</button>
+    <a href="/index.html">Back to Customer Login</a>
+</div>
+
+<script>
+    function login(){
+        let email=document.getElementById("email").value;
+        let pass=document.getElementById("password").value;
+
+        if(email==="admin@gmail.com" && pass==="admin123"){
+            window.location.href="/admin.html";
+        }else{
+            alert("Use demo admin login: admin@gmail.com / admin123");
+        }
+    }
+</script>
+</body>
+</html>
